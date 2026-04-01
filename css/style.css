@@ -90,3 +90,17 @@ footer {
     padding: 40px 0;
     font-size: 0.9rem;
 }
+
+.boton-contacto {
+    border: 2px solid var(--color-primario);
+    padding: 8px 16px;
+    border-radius: 25px;
+    color: var(--color-primario) !important;
+    animation: pulso-animacion 2s infinite;
+}
+
+@keyframes pulso-animacion {
+    0% { box-shadow: 0 0 0 0 rgba(9, 132, 227, 0.4); }
+    70% { box-shadow: 0 0 0 12px rgba(9, 132, 227, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(9, 132, 227, 0); }
+}
