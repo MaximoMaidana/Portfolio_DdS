@@ -1,0 +1,20 @@
+:root {
+    --color-fondo-principal: #f4f7f6;
+    --color-fondo-secundario: #ffffff;
+    --color-texto-oscuro: #2d3436;
+    --color-texto-claro: #636e72;
+    --color-primario: #0984e3;
+    --color-acento: #00cec9;
+    --color-borde: #dfe6e9;
+    --fuente-cuerpo: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--fuente-cuerpo);
+    background-color: var(--color-fondo-principal);
+    color: var(--color-texto-oscuro);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
