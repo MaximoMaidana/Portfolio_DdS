@@ -82,3 +82,11 @@ ul {
     border-radius: 15px;
     background-color: var(--color-borde);
 }
+
+footer {
+    background-color: var(--color-texto-oscuro);
+    color: var(--color-fondo-secundario);
+    text-align: center;
+    padding: 40px 0;
+    font-size: 0.9rem;
+}
