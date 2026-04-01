@@ -22,7 +22,11 @@
                     <li><a href="#experiencia">Experiencia</a></li>
                     <li><a href="#proyectos">Proyectos</a></li>
                     <li><a href="contacto.html" class="boton-contacto">Contactame</a></li>
-                    
+                    <li>
+                        <button id="boton-modo-oscuro" class="alternar-tema" aria-label="Cambiar tema">
+                            <span id="emoji-tema">🌙</span>
+                        </button>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -74,5 +78,32 @@
             </section>
         </main>
         <footer>[Enlaces a redes sociales]</footer>
+        <script>
+            const botonModo = document.getElementById('boton-modo-oscuro');
+            const cuerpo = document.body;
+            const emoji = document.getElementById('emoji-tema');
+
+            
+            const temaGuardado = localStorage.getItem('tema-portfolio');
+
+            if (temaGuardado === 'oscuro') {
+                cuerpo.classList.add('modo-oscuro');
+                emoji.textContent = '☀️';
+            }
+
+            botonModo.addEventListener('click', () => {
+                
+                cuerpo.classList.toggle('modo-oscuro');
+                
+               
+                if (cuerpo.classList.contains('modo-oscuro')) {
+                    emoji.textContent = '☀️';
+                    localStorage.setItem('tema-portfolio', 'oscuro');
+                } else {
+                    emoji.textContent = '🌙';
+                    localStorage.setItem('tema-portfolio', 'claro');
+                }
+            });
+        </script>
     </body>
 </html>

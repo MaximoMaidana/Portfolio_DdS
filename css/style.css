@@ -16,6 +16,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    transition: background-color 0.4s ease, color 0.4s ease; /* anima transición entre modo oscuro y claro */
 }
 
 header {
@@ -123,4 +124,33 @@ footer {
     section {
         padding: 40px 5%;
     }
+}
+
+/* Modo oscuro */
+
+body.modo-oscuro {
+    --color-fondo-principal: #121212;
+    --color-fondo-secundario: #1e1e1e;
+    --color-texto-oscuro: #f4f7f6;
+    --color-texto-claro: #b2bec3;
+    --color-primario: #74b9ff; 
+    --color-borde: #333;
+}
+
+
+.alternar-tema {
+    background: var(--color-borde);
+    border: 2px solid var(--color-primario);
+    padding: 5px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 15px;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+.alternar-tema:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px var(--color-primario);
 }
