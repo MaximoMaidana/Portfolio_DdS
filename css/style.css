@@ -175,3 +175,7 @@ body.modo-oscuro {
     .inicio, .habilidades {
     display: flex;
     flex-direction: column;
+    }
+    .tarjeta-experiencia, .tarjeta-proyecto {
+        margin-bottom: 0;
+    }
