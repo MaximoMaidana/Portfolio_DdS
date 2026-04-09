@@ -31,11 +31,7 @@ header {
     top: 0;
     z-index: 1000;
     align-items: center;
-
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-
 }
 
 .nav-list {
@@ -154,7 +150,7 @@ footer {
     background-color: var(--color-texto-oscuro);
     color: var(--color-fondo-secundario);
     text-align: center;
-    padding: 30px 0;
+    padding: 30px;
     font-size: 0.9rem;
 }
 
