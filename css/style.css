@@ -142,3 +142,36 @@ body.modo-oscuro {
     transform: scale(1.1);
     box-shadow: 0 0 10px var(--color-primario);
 }
+
+
+@media (max-width: 992px) {
+    header {
+        text-align: center;
+        position: static;
+        padding: 1rem 0;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+        padding: 0;
+        border-top: 1px solid var(--color-borde);
+        padding-top: 20px;
+        width: 100%;
+    }
+    
+    .nav-list li {
+        margin: 10px 0;
+    }
+    .alternar-tema {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    
+    section {
+        padding: 40px 5%;
+    }
+    .inicio, .habilidades {
+    display: flex;
+    flex-direction: column;
