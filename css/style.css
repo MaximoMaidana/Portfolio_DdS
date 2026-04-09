@@ -35,7 +35,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; 
 
 }
 
@@ -56,7 +55,7 @@ header {
     text-decoration: none;
     color: var(--color-texto-oscuro);
     font-weight: 700;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease; /* anima el cambio de color de los links del nav */
     cursor: pointer;
 } 
 
@@ -106,7 +105,7 @@ ul {
     border-radius: 12px;
     border: 1px solid var(--color-borde);
     height: 100%; /* para que todas midan lo mismo en la misma fila */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* anima las transiciones del hover */
     margin-bottom: 25px;
 }
 .tarjeta-experiencia:hover, .tarjeta-proyecto:hover {
@@ -135,21 +134,12 @@ ul {
     border-radius: 6px;
     font-size: 0.9rem;
     font-weight: 700;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease; /* ilumina los enlaces de los proyectos con hover */
 }
 .enlace-github:hover {
     opacity: 0.8;
     color: var(--color-texto-claro);
     text-decoration: none;
-}
-
-
-footer {
-    background-color: var(--color-texto-oscuro);
-    color: var(--color-fondo-secundario);
-    text-align: center;
-    padding: 40px 0;
-    font-size: 0.9rem;
 }
 
 .boton-contacto {
@@ -214,12 +204,13 @@ body.modo-oscuro {
 }
 
 .alternar-tema:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* hace que el botón crezca cuando se posa el cursor sobre él */
     box-shadow: 0 0 10px var(--color-primario);
 }
 
 
 /* Estilos para la página de Contacto */
+
 .seccion-contacto {
     max-width: 600px;
     margin: 40px auto;
