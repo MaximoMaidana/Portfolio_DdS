@@ -10,6 +10,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
+        <script defer src="js/script.js"></script>
     </head>
     <body>
         <header class="row">
@@ -116,32 +117,5 @@
 </section>
         </main>
         <footer>[Enlaces a redes sociales]</footer>
-        <script>
-            const botonModo = document.getElementById('boton-modo-oscuro');
-            const cuerpo = document.body;
-            const emoji = document.getElementById('emoji-tema');
-
-            
-            const temaGuardado = localStorage.getItem('tema-portfolio');
-
-            if (temaGuardado === 'oscuro') {
-                cuerpo.classList.add('modo-oscuro');
-                emoji.textContent = '☀️';
-            }
-
-            botonModo.addEventListener('click', () => {
-                
-                cuerpo.classList.toggle('modo-oscuro');
-                
-               
-                if (cuerpo.classList.contains('modo-oscuro')) {
-                    emoji.textContent = '☀️';
-                    localStorage.setItem('tema-portfolio', 'oscuro');
-                } else {
-                    emoji.textContent = '🌙';
-                    localStorage.setItem('tema-portfolio', 'claro');
-                }
-            });
-        </script>
     </body>
 </html>
