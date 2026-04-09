@@ -10,4 +10,4 @@ Este es el Trabajo Práctico #1 para la materia Desarrollo de Software.
 
 ## 🛠️ Instalación y Vista
 Para ver el proyecto localmente, clona el repositorio y abre `index.html`.
-También puedes verlo en vivo gracias a GitHub Pages.
+También puedes verlo en vivo gracias a GitHub Pages a traves de: https://maximomaidana.github.io/Portfolio_DdS/
