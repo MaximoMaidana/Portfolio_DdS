@@ -96,6 +96,54 @@ ul {
     margin: 0px;
 }
 
+.contenedor-tarjetas {
+    margin-top: 30px;
+}
+
+.tarjeta-experiencia, .tarjeta-proyecto {
+    background-color: var(--color-fondo-principal);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid var(--color-borde);
+    height: 100%; /* para que todas midan lo mismo en la misma fila */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 25px;
+}
+.tarjeta-experiencia:hover, .tarjeta-proyecto:hover {
+    transform: translateY(-5px); /* mueve la tarjeta 5px hacia arriba */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-color: var(--color-primario);
+}
+.tarjeta-experiencia h3, .tarjeta-proyecto h3 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    color: var(--color-texto-oscuro);
+}
+.fecha-experiencia {
+    font-weight: 700;
+    color: var(--color-primario);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    display: block;
+}
+.enlaces-github {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: var(--color-primario);
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    transition: opacity 0.3s ease;
+}
+.enlace-github:hover {
+    opacity: 0.8;
+    color: var(--color-texto-claro);
+    text-decoration: none;
+}
+
+
 footer {
     background-color: var(--color-texto-oscuro);
     color: var(--color-fondo-secundario);
